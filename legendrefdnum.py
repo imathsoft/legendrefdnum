@@ -151,7 +151,7 @@ class IntegratorSinc(object):
         logger.debug("\nmu: %s", str(self.mu))
 
         # Try to load precalculated \delta^{-1}_{i} values for i >= 0.
-        # If we can't or there isn't enough of them in the precalv file we
+        # If we can't or there isn't enough of them in the precalc file we
         # generate them with scipy.special.sici instead (not recommended).
         deltainvfile = DeltaInvFile(2 * self.K, numclass = self.numclass)
         self.deltainv = numpy.zeros((4 * self.K + 1), dtype=self.numclass)
@@ -182,7 +182,7 @@ class IntegratorSinc(object):
         intsinc = IntegratorSinc(a = -1, b = 1, K = 2, N = 1)
         # Now intsinc.z ==
         # [-0.94387775 -0.70952513  0.0  0.70952513  0.94387775].
-        # Integrate f(x) over (a, b) where f(z_{0}) = 0.2, f(z_{1}) = 0.4, ...
+        # Integrate f(x) over (a, b) where f(z[0]) = 0.2, f(z[1]) = 0.4, ...
         v1 = intsinc.integr_ab([0.2, 0.4, 0.6, 0.8, 1.0])
         # Integrate f(x) * g(x) over (a, b) where f(x) = x, g(x) = 1 - x
         v2 = intsinc.integr_ab(lambda x: x, lambda x: 1 - x)
@@ -494,8 +494,8 @@ class FDPlot(object):
         """"Build plot graphic with matplotlib."""
         matplotlib.rc('font', family='serif')
         for res, currmarker in itertools.izip(self.results,
-                                               itertools.cycle(['s', '+', 'o',
-                                                                'D', '^'])):
+                                              itertools.cycle(['s', '+', 'o',
+                                                               'D', '^'])):
             plt.plot([func(x) for x in res.result[field][1:]], color='k',
                      marker=currmarker)
 

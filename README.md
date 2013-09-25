@@ -27,7 +27,7 @@ To run `legendrefdnum` on Ubuntu 12.04 or later do the following:
 
 2. Execute the command `sudo apt-get install python-numpy python-scipy python-mpmath python-matplotlib` in the terminal.
 
-3. Run `example1.py` to make sure everything works.
+3. Run `example1.py` from the cloned repository to make sure everything works.
 
 License
 -------

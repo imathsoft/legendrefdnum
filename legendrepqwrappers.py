@@ -34,7 +34,7 @@ import scipy.special
 def isnumber(val):
     """Check if val is a number of a built-in or NumPy type."""
     return isinstance(val, numbers.Number) or \
-             not numpy.isnan(val)
+           not numpy.isnan(val)
 
 def valuedebug(f):
     """Print error message if lqmn fails and return nearest "good" value."""
