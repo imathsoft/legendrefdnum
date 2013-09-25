@@ -22,8 +22,9 @@
 The below code references formulas found in the article Volodymyr L. Makarov,
 Denys V. Dragunov, Danyil V. Bohdan. Exponentially convergent
 numerical-analytical method for solving eigenvalue problems for singular
-differential operators. A preprint of this article will soon be availible from
-http://arxiv.org/. It will be referred to as [1] in the comments below.
+differential operators. A preprint of this article is availible at
+http://arxiv.org/abs/1309.5795. It will be referred to as [1] in the comments
+below.
 
 It is highly recommended that you use this module with
 numpy.longdouble == float128. Doing so requires running a 64-bit version of
