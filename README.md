@@ -3,14 +3,14 @@ legendrefdnum
 
 `legendrefdnum` is a Python 2.x module for solving Sturm-Liouville problems of the type
 
-![-\frac{d}{d x}\left[(1-x^{2})\frac{d u(x)}{d x}\right]+q(x)u(x)=\lambda u(x),\quad x\in(-1, 1),](http://www.imath.kiev.ua/~dbohdan/legendrefdnum/eq1.png)
+![-\frac{d}{d x}\left[(1-x^{2})\frac{d u(x)}{d x}\right]+q(x)u(x)=\lambda u(x),\quad x\in(-1, 1),](images/eq1.png)
 
-![\lim\limits_{x\rightarrow \pm 1}(1-x^{2})\frac{d u(x)}{d x}=0.](http://www.imath.kiev.ua/~dbohdan/legendrefdnum/eq2.png)
+![\lim\limits_{x\rightarrow \pm 1}(1-x^{2})\frac{d u(x)}{d x}=0.](images/eq2.png)
 
 
 It has been proved to be exponentially convergent for
 
-![\|q\|_{1, \rho}=\int\limits_{-1}^{1}\frac{|q(x)|}{\sqrt{1-x^{2}}}d x<\infty.](http://www.imath.kiev.ua/~dbohdan/legendrefdnum/eq3.png)
+![\|q\|_{1, \rho}=\int\limits_{-1}^{1}\frac{|q(x)|}{\sqrt{1-x^{2}}}d x<\infty.](images/eq3.png)
 
 The module was developed based on the algorithm published in the article *Volodymyr L. Makarov, Denys V. Dragunov, Danyil V. Bohdan. Exponentially convergent numerical-analytical method for solving eigenvalue problems for singular differential operators.* A preprint of this article is availible from <http://arxiv.org/abs/1309.5795>.
 
