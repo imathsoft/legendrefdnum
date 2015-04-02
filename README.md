@@ -12,7 +12,7 @@ It has been proved to be exponentially convergent for
 
 ![\|q\|_{1, \rho}=\int\limits_{-1}^{1}\frac{|q(x)|}{\sqrt{1-x^{2}}}d x<\infty.](images/eq3.png)
 
-The module was developed based on the algorithm published in the article *Volodymyr L. Makarov, Denys V. Dragunov, Danyil V. Bohdan. Exponentially convergent numerical-analytical method for solving eigenvalue problems for singular differential operators.* A preprint of this article is availible from <http://arxiv.org/abs/1309.5795>.
+The module was developed based on the algorithm published in the article *Volodymyr L. Makarov, Denys V. Dragunov, Danyil V. Bohdan. Exponentially convergent numerical-analytical method for solving eigenvalue problems for singular differential operators.* A preprint of this article is available from <http://arxiv.org/abs/1309.5795>.
 
 `legendrefdnum` comes extensively commented and with example code. You don't have to understand the FD-method to use `legendrefdnum`.
 
